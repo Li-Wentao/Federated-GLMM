@@ -162,7 +162,7 @@ def LA(X, y):
     tau = 1
 
     start_time = time.time()
-    # print('Initial beta:', beta, "\n")
+    print('Initial beta:', beta, "\n")
     for step_mu in range(3):
         for i in range(len(mu)):
             mu[i] = max_mu(X[i], y[i], mu[i], beta, tau)
@@ -179,13 +179,13 @@ def LA(X, y):
             beta = new_beta
             if True in np.isnan(beta):
                 break;
-            # print('Step ', step + 1, ':\n')
-            # print('Beta:\n', beta, '\n')
-            # print('Diff:\n', delta, '\n')
+            print('Step ', step + 1, ':\n')
+            print('Beta:\n', beta, '\n')
+            print('Diff:\n', delta, '\n')
         if True in np.isnan(beta):
             break;
-    # print('Beta:\n', beta, '\n')
-    # print("--- %s seconds ---" % (time.time() - start_time))
+    print('Beta:\n', beta, '\n')
+    print("--- %s seconds ---" % (time.time() - start_time))
     return [beta, mu]
 
 def output(X, beta, true_beta):
