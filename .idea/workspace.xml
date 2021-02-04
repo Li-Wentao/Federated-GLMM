@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d20fe62-54d9-4127-8406-555bd6f30d42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Simulation_LA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation_LA.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="5d20fe62-54d9-4127-8406-555bd6f30d42" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +11,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Simulation_LA.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Simulation_LA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Simulation_LA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="219" column="78" selection-start-line="219" selection-start-column="78" selection-end-line="219" selection-end-column="78" />
+            <state>
+              <caret lean-forward="true" selection-end-line="241" selection-end-column="13" />
+              <folding>
+                <element signature="e#28#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="233" column="17" lean-forward="true" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
               <folding>
                 <element signature="e#28#74#0" expanded="true" />
               </folding>
@@ -34,6 +44,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Simulation_LA.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -123,7 +134,7 @@
     <frame x="1720" y="25" width="1720" height="1415" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
@@ -165,8 +176,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Simulation_LA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="219" column="78" selection-start-line="219" selection-start-column="78" selection-end-line="219" selection-end-column="78" />
+        <state>
+          <caret lean-forward="true" selection-end-line="241" selection-end-column="13" />
+          <folding>
+            <element signature="e#28#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="233" column="17" lean-forward="true" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
           <folding>
             <element signature="e#28#74#0" expanded="true" />
           </folding>
