@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d20fe62-54d9-4127-8406-555bd6f30d42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation_LA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation_LA.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="186" selection-start-line="186" selection-end-line="187" selection-end-column="60" />
+            <state relative-caret-position="93">
+              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
               <folding>
                 <element signature="e#28#74#0" expanded="true" />
               </folding>
@@ -52,7 +51,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1720" />
     <option name="y" value="25" />
     <option name="width" value="1720" />
     <option name="height" value="1415" />
@@ -135,8 +133,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.Simulation_LA" />
-        <item itemvalue="Python.Simulation_LA" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.Simulation_LA" />
         <item itemvalue="Python.Simulation_LA" />
       </list>
@@ -156,13 +154,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1720" y="25" width="1720" height="1415" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1720" height="1415" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3292683" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -211,8 +208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="186" selection-start-line="186" selection-end-line="187" selection-end-column="60" />
+        <state relative-caret-position="93">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
             <element signature="e#28#74#0" expanded="true" />
           </folding>
