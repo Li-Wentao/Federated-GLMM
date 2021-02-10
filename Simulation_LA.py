@@ -215,6 +215,8 @@ truth = np.array([-1.5,0.1,-0.5,-0.3,0.4,-0.2,-0.25,0.35,-0.1,0.5]).reshape(10, 
 var_name = []
 for i in range(10):
     var_name += ['X' + str(i+1)]
+import sys
+sys.stdout = open('../Simulation_data_GLMM/Result_LA/test.log', 'w')
 
 # Setting 1
 print('======================\n Here starts Setting 1 \n======================\n\n\n')
@@ -424,7 +426,7 @@ for i in range(len(file_names)):
     except:
         pass;
 
-
+sys.stdout.close()
 
 
 
