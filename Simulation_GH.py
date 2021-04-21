@@ -234,40 +234,63 @@ def max_mu(x, y, mu, beta_0, tau=1, max_iter=100):
         mu = mu_new
     return mu
 
+def mapping(x):
+    return (x - min(x))/(max(x) - min(x))
+
+def loss(x, y, beta, mu):
+    return sum((mapping(Pi(x, beta, mu)) - y)**2)
 
 # Definitions for GH
 def GH(k, X, y):
+    # Added regularization
+    pre_los = 10**10
+    for lam in np.arange(0, 11, 1):
+        try:
+    
+            # Regression with regularization
+            beta = np.repeat(0, 10).reshape(10, 1)
+            mu = np.repeat(0.1, len(y))
+            tau = 1
 
-    beta = np.repeat(0, 10).reshape(10, 1)
-    mu = np.repeat(0.1, len(y))
-    tau = 1
-
-    start_time = time.time()
-    # print('Initial beta:', beta, "\n")
-    for step_mu in range(3):
-        for i in range(len(mu)):
-            mu[i] = max_mu(X[i], y[i], mu[i], beta, tau)
-        for step in range(100):
-            l1 = 0
-            l2 = 0
-            for i in range(len(mu)):
-                l1 += l_1(k, X[i], y[i], mu[i], beta, tau)
-                l2 += l_2(k, X[i], y[i], mu[i], beta, tau)
-            delta = l1 @ inv(l2)
-            new_beta = beta - delta.reshape(10, 1)
-            if max(np.abs(delta)) < 10 ** (-10):
-                break;
-            beta = new_beta
-            if True in np.isnan(beta):
-                break;
-            # print('Step ', step + 1, ':\n')
+            start_time = time.time()
+            # print('Initial beta:', beta, "\n")
+            for step_mu in range(3):
+                for i in range(len(mu)):
+                    mu[i] = max_mu(X[i], y[i], mu[i], beta, tau)
+                for step in range(100):
+                    l1 = 0
+                    l2 = 0
+                    for i in range(len(mu)):
+                        l1 += l_1(k, X[i], y[i], mu[i], beta, tau)
+                        l2 += l_2(k, X[i], y[i], mu[i], beta, tau)
+                    l1 -= (2 * lam * beta.transpose())[0]
+                    l2 -= np.diag(np.repeat(2 * lam, 10))
+                    delta = l1 @ inv(l2)
+                    new_beta = beta - delta.reshape(10, 1)
+                    if max(np.abs(delta)) < 10 ** (-10):
+                        break;
+                    beta = new_beta
+                    if True in np.isnan(beta):
+                        break;
+                    # print('Step ', step + 1, ':\n')
+                    # print('Beta:\n', beta, '\n')
+                    # print('Diff:\n', delta, '\n')
+                if True in np.isnan(beta):
+                    break;
             # print('Beta:\n', beta, '\n')
-            # print('Diff:\n', delta, '\n')
-        if True in np.isnan(beta):
-            break;
-    # print('Beta:\n', beta, '\n')
-    # print("--- %s seconds ---" % (time.time() - start_time))
-    return [beta, mu]
+            # print("--- %s seconds ---" % (time.time() - start_time))
+            los = 0
+            for i in range(len(X)):
+                los += loss(X[i], y[i], beta, mu[i])
+            if los < pre_los:
+                optimized_beta = beta
+                optimized_mu = mu
+                optimized_lam = lam
+                # reset pre_los
+                pre_los = los
+        except:
+            continue;
+    return [optimized_beta, optimized_mu]
 
 def output(X, beta, true_beta):
     X = np.concatenate(X)
@@ -298,9 +321,9 @@ for i in range(10):
     var_name += ['X' + str(i+1)]
 k = 2
 import sys
-sys.stdout = open('../Simulation_data_GLMM/Result_GH/test.log', 'w')
+# sys.stdout = open('../Simulation_data_GLMM/Result_GH/test.log', 'w')
 
-################# Test ###################
+################ Test ###################
 
 # Setting 1
 print('======================\n Here starts Setting 1 \n======================\n\n\n')
@@ -510,7 +533,7 @@ for i in range(len(file_names)):
     except:
         pass;
 
-sys.stdout.close()
+# sys.stdout.close()
 
 
 
