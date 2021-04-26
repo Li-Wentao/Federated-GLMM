@@ -1,3 +1,4 @@
+from numba import cuda
 from numpy.polynomial.hermite import hermgauss
 from matplotlib import pyplot as plt
 from numpy.linalg import inv
