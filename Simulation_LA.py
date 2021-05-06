@@ -212,7 +212,7 @@ def LA(X, y):
             continue;
     return [optimized_beta, optimized_mu]
 
-def output(X, beta, true_beta):
+def output(X, beta, true_beta, t):
     X = np.concatenate(X)
 
     V = np.diagflat(Pi(X, beta, 0) * (1 - Pi(X, beta, 0)))
@@ -228,7 +228,8 @@ def output(X, beta, true_beta):
 
     df = pd.DataFrame({'Truth': np.transpose(true_beta)[0], 'Coef': np.transpose(beta)[0], 'Std.Err': np.transpose(SE)[0],
                        'z': np.transpose(Z)[0], 'P-value': np.transpose(P)[0],
-                       '[0.025': np.transpose(CI_025)[0], '0.975]': np.transpose(CI_975)[0]},
+                       '[0.025': np.transpose(CI_025)[0], '0.975]': np.transpose(CI_975)[0],
+                       'RunTime': t},
                       index = var_name)
     return df
 
@@ -260,7 +261,8 @@ for i in range(len(file_names)):
         out = [out1, out2]
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_1_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_1_' +
                                               file_names[i][44:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
@@ -285,7 +287,9 @@ for i in range(len(file_names)):
         out = [out1, out2]
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_2_' +
+        t = time.time() - start_ti
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_2_' +
                                               file_names[i][44:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
@@ -312,7 +316,8 @@ for i in range(len(file_names)):
             out.append(globals()['out%s' % str(k+1)])
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_3_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_3_' +
                                               file_names[i][45:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
@@ -339,7 +344,8 @@ for i in range(len(file_names)):
             out.append(globals()['out%s' % str(k+1)])
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_4_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_4_' +
                                               file_names[i][45:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
@@ -364,7 +370,8 @@ for i in range(len(file_names)):
         out = [out1, out2]
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_5_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_5_' +
                                               file_names[i][43:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
@@ -389,7 +396,8 @@ for i in range(len(file_names)):
         out = [out1, out2]
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_6_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_6_' +
                                               file_names[i][43:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
@@ -416,7 +424,8 @@ for i in range(len(file_names)):
             out.append(globals()['out%s' % str(k+1)])
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_7_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_7_' +
                                               file_names[i][44:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
@@ -443,7 +452,8 @@ for i in range(len(file_names)):
             out.append(globals()['out%s' % str(k+1)])
         # Simulations
         [beta, mu] = LA(data, out)
-        output(data, beta, truth).to_csv('../Simulation_data_GLMM/Result_LA/Setting_8_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_8_' +
                                               file_names[i][44:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
