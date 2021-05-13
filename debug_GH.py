@@ -274,8 +274,8 @@ def GH(k, X, y):
                     if True in np.isnan(beta):
                         break;
                     print('Step ', step + 1, ':\n')
-                    # print('Beta:\n', beta, '\n')
-                    # print('Diff:\n', delta, '\n')
+                    print('Beta:\n', beta, '\n')
+                    print('Diff:\n', delta, '\n')
                 if True in np.isnan(beta):
                     break;
             # print('Beta:\n', beta, '\n')
