@@ -243,7 +243,7 @@ for i in range(10):
 import sys
 # sys.stdout = open('../Simulation_data_GLMM/Result_LA/test.log', 'w')
 
-Setting 1
+# Setting 1
 print('======================\n Here starts Setting 1 \n======================\n\n\n')
 
 file_dir = '../Simulation_data_GLMM/Setting_1/'
