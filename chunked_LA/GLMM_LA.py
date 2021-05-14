@@ -181,7 +181,7 @@ def LA(X, y):
             for step_mu in range(3):
                 for i in range(len(mu)):
                     mu[i] = max_mu(X[i], y[i], mu[i], beta, tau)
-                for step in range(100):
+                for step in range(50):
                     l1 = 0
                     l2 = 0
                     for i in range(len(mu)):
@@ -191,7 +191,7 @@ def LA(X, y):
                     l2 -= np.diag(np.repeat(2 * lam, 10))
                     delta = l1 @ inv(l2)
                     new_beta = beta - delta.reshape(10, 1)
-                    if max(np.abs(delta)) < 10 ** (-10):
+                    if max(np.abs(delta)) < 10 ** (-3):
                         break;
                     beta = new_beta
                     if True in np.isnan(beta):

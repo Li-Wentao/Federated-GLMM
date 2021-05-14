@@ -1,0 +1,308 @@
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:48: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:52: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:59: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x[i] @ beta_0 + mu))**3))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:64: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: overflow encountered in multiply
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:66: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: invalid value encountered in true_divide
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: overflow encountered in power
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:73: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:74: RuntimeWarning: overflow encountered in multiply
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:75: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:74: RuntimeWarning: invalid value encountered in true_divide
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:76: RuntimeWarning: overflow encountered in power
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: overflow encountered in square
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: overflow encountered in multiply
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: overflow encountered in square
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: overflow encountered in multiply
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: overflow encountered in multiply
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: invalid value encountered in true_divide
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: overflow encountered in multiply
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: invalid value encountered in true_divide
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: overflow encountered in exp
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: overflow encountered in exp
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: invalid value encountered in true_divide
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:72: RuntimeWarning: overflow encountered in multiply
+  result = np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:72: RuntimeWarning: invalid value encountered in true_divide
+  result = np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:74: RuntimeWarning: overflow encountered in exp
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:76: RuntimeWarning: overflow encountered in exp
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:76: RuntimeWarning: invalid value encountered in true_divide
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:43: RuntimeWarning: overflow encountered in square
+  * (np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu))**2))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: overflow encountered in exp
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: overflow encountered in exp
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:48: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:52: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: overflow encountered in exp
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:59: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x[i] @ beta_0 + mu))**3))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: overflow encountered in exp
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:64: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:66: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:72: RuntimeWarning: overflow encountered in exp
+  result = np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:73: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:75: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:15: RuntimeWarning: overflow encountered in exp
+  return np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:15: RuntimeWarning: invalid value encountered in true_divide
+  return np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:43: RuntimeWarning: overflow encountered in exp
+  * (np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu))**2))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:43: RuntimeWarning: invalid value encountered in true_divide
+  * (np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu))**2))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: overflow encountered in exp
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: overflow encountered in square
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: overflow encountered in exp
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: overflow encountered in multiply
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:48: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:48: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: overflow encountered in square
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: overflow encountered in multiply
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:52: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:52: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:59: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x[i] @ beta_0 + mu))**3))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: overflow encountered in multiply
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: invalid value encountered in true_divide
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: overflow encountered in exp
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:59: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x[i] @ beta_0 + mu))**3))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: overflow encountered in exp
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: overflow encountered in multiply
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:64: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:64: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: invalid value encountered in true_divide
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: overflow encountered in exp
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: overflow encountered in multiply
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:66: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:66: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: invalid value encountered in true_divide
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: overflow encountered in exp
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: overflow encountered in power
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: invalid value encountered in true_divide
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:72: RuntimeWarning: overflow encountered in exp
+  result = np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:72: RuntimeWarning: overflow encountered in multiply
+  result = np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:73: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:73: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:72: RuntimeWarning: invalid value encountered in true_divide
+  result = np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:74: RuntimeWarning: overflow encountered in exp
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:74: RuntimeWarning: overflow encountered in multiply
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:75: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:75: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:74: RuntimeWarning: invalid value encountered in true_divide
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:76: RuntimeWarning: overflow encountered in exp
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:76: RuntimeWarning: overflow encountered in power
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:76: RuntimeWarning: invalid value encountered in true_divide
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:15: RuntimeWarning: overflow encountered in exp
+  return np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:15: RuntimeWarning: invalid value encountered in true_divide
+  return np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:43: RuntimeWarning: overflow encountered in square
+  * (np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu))**2))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:43: RuntimeWarning: overflow encountered in exp
+  * (np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu))**2))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:43: RuntimeWarning: invalid value encountered in true_divide
+  * (np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu))**2))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: overflow encountered in exp
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: overflow encountered in square
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:34: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2))) - 1/tau**2
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: overflow encountered in exp
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: overflow encountered in multiply
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:48: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:48: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:47: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: overflow encountered in square
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:37: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))**2)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: overflow encountered in multiply
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:52: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:52: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)), axis = 0)
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:51: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: overflow encountered in multiply
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:59: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x[i] @ beta_0 + mu))**3))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: invalid value encountered in true_divide
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:58: RuntimeWarning: overflow encountered in exp
+  * (np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:59: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x[i] @ beta_0 + mu))**3))
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: overflow encountered in exp
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: overflow encountered in multiply
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:64: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:64: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:63: RuntimeWarning: invalid value encountered in true_divide
+  result = sum(- (np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: overflow encountered in exp
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: overflow encountered in multiply
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:66: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:66: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu))**4)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:65: RuntimeWarning: invalid value encountered in true_divide
+  + (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: overflow encountered in exp
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: overflow encountered in power
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:67: RuntimeWarning: invalid value encountered in true_divide
+  - (np.exp(2 * (x @ beta_0 + mu))  / (1 + np.exp(x @ beta_0 + mu))**3)\
+/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py:72: RuntimeWarning: overflow encountered in exp
+  result = np.sum(- x * np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1)\
+Traceback (most recent call last):
+  File "gh_1.py", line 1, in <module>
+    from GLMM_GH import *
+  File "/Users/wli17/Documents/GLMM/GLMM/chunked_GH/GLMM_GH.py", line 1, in <module>
+    from numba import cuda
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/__init__.py", line 34, in <module>
+    from numba.core.decorators import (cfunc, generated_jit, jit, njit, stencil,
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/core/decorators.py", line 12, in <module>
+    from numba.stencils.stencil import stencil
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/stencils/stencil.py", line 11, in <module>
+    from numba.core import types, typing, utils, ir, config, ir_utils, registry
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/core/registry.py", line 4, in <module>
+    from numba.core import utils, typing, dispatcher, cpu
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/core/dispatcher.py", line 15, in <module>
+    from numba.core import utils, types, errors, typing, serialize, config, compiler, sigutils
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/core/compiler.py", line 6, in <module>
+    from numba.core import (utils, errors, typing, interpreter, bytecode, postproc,
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/core/callconv.py", line 11, in <module>
+    from numba.core.base import PYOBJECT, GENERIC_POINTER
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/core/base.py", line 23, in <module>
+    from numba.cpython import builtins
+  File "/Users/wli17/opt/anaconda3/lib/python3.8/site-packages/numba/cpython/builtins.py", line 491, in <module>
+    from numba.extending import overload, register_jitable
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 874, in get_code
+  File "<frozen importlib._bootstrap_external>", line 972, in get_data
+KeyboardInterrupt

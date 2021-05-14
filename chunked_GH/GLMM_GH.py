@@ -10,7 +10,7 @@ from scipy.stats import norm
 var_name = []
 for i in range(10):
     var_name += ['X' + str(i+1)]
-    
+
 def Pi(x, beta_0, mu):
     return np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
 
@@ -261,7 +261,7 @@ def GH(k, X, y):
             for step_mu in range(3):
                 for i in range(len(mu)):
                     mu[i] = max_mu(X[i], y[i], mu[i], beta, tau)
-                for step in range(100):
+                for step in range(50):
                     l1 = 0
                     l2 = 0
                     for i in range(len(mu)):
@@ -271,7 +271,8 @@ def GH(k, X, y):
                     l2 -= np.diag(np.repeat(2 * lam, 10))
                     delta = l1 @ inv(l2)
                     new_beta = beta - delta.reshape(10, 1)
-                    if max(np.abs(delta)) < 10 ** (-10):
+                    if max(np.abs(delta)) < 10 ** (-3):
+                        # print('break when loss met threshold')
                         break;
                     beta = new_beta
                     if True in np.isnan(beta):
