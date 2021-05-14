@@ -7,6 +7,10 @@ import scipy
 import time
 from scipy.stats import norm
 
+var_name = []
+for i in range(10):
+    var_name += ['X' + str(i+1)]
+
 def Pi(x, beta_0, mu):
     result = np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
     if np.exp(x @ beta_0 + mu).max() == np.inf:
@@ -213,6 +217,10 @@ def LA(X, y):
     return [optimized_beta, optimized_mu]
 
 def output(X, beta, true_beta, t):
+    var_name = []
+    for i in range(10):
+        var_name += ['X' + str(i+1)]
+        
     X = np.concatenate(X)
 
     V = np.diagflat(Pi(X, beta, 0) * (1 - Pi(X, beta, 0)))

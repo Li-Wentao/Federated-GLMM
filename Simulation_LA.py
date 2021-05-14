@@ -287,7 +287,6 @@ for i in range(len(file_names)):
         out = [out1, out2]
         # Simulations
         [beta, mu] = LA(data, out)
-        t = time.time() - start_ti
         t = time.time() - start_time
         output(data, beta, truth, t).to_csv('../Simulation_data_GLMM/Result_LA/Setting_2_' +
                                               file_names[i][44:], header = True)
