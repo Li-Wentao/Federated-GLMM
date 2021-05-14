@@ -272,7 +272,8 @@ def GH(k, X, y):
                     delta = l1 @ inv(l2)
                     new_beta = beta - delta.reshape(10, 1)
                     if max(np.abs(delta)) < 10 ** (-3):
-                        # print('break when loss met threshold')
+                        break;
+                    if max(np.abs(delta)) > 10 ** (2):
                         break;
                     beta = new_beta
                     if True in np.isnan(beta):

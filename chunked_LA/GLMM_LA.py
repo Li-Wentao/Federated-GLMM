@@ -193,12 +193,16 @@ def LA(X, y):
                     new_beta = beta - delta.reshape(10, 1)
                     if max(np.abs(delta)) < 10 ** (-3):
                         break;
+                    if max(np.abs(delta)) > 10 ** (2):
+                        break;
                     beta = new_beta
                     if True in np.isnan(beta):
                         break;
                     # print('Step ', step + 1, ':\n')
                     # print('Beta:\n', beta, '\n')
                     # print('Diff:\n', delta, '\n')
+                    # print('Lam:\n', lam, '\n')
+
                 if True in np.isnan(beta):
                     break;
             # print('Beta:\n', beta, '\n')
