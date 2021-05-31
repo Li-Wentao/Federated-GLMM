@@ -5,7 +5,7 @@ truth = np.array([-1.5,0.1,-0.5,-0.3,0.4,-0.2,-0.25,0.35,-0.1,0.5]).reshape(10, 
 var_name = []
 for i in range(10):
     var_name += ['X' + str(i+1)]
-k = 3
+k = 2
 
 # Setting 1
 print('======================\n Here starts Setting 1 \n======================\n\n\n')
@@ -25,7 +25,8 @@ for i in range(len(file_names)):
         out = [out1, out2]
         # Simulations
         [beta, mu] = GH(k, data, out)
-        output(data, beta, truth).to_csv('../../Simulation_data_GLMM/Result_GH/Setting_1_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../../Simulation_data_GLMM/Result_GH/Setting_1_' +
                                               file_names[i][44:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))

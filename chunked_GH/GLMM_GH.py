@@ -211,6 +211,10 @@ def part_1(k, x, y, mu, beta_0, tau = 1):
     + f_k_bb(k, x, y, mu, beta_0, tau)
     return result
 
+def l(x, y, mu, beta_0, tau=1):
+    l = 0.5 * np.log(2 * np.pi) + np.log(omega(x, y, mu, beta_0, tau)) + g(x, y, mu, beta_0, tau)
+    return l
+
 def l_2(k, x, y, mu, beta_0, tau = 1):
     a = 1 / sum(f_k(k, x, y, mu, beta_0, tau))
     b = 0
@@ -241,13 +245,11 @@ def max_mu(x, y, mu, beta_0, tau=1, max_iter=100):
 def mapping(x):
     return (x - min(x))/(max(x) - min(x))
 
-def loss(x, y, beta, mu):
-    return sum((mapping(Pi(x, beta, mu)) - y)**2)
 
 # Definitions for GH
 def GH(k, X, y):
     # Added regularization
-    pre_los = 10**10
+    pre_score = -10**10
     for lam in np.arange(0, 11, 1):
         try:
     
@@ -261,7 +263,7 @@ def GH(k, X, y):
             for step_mu in range(3):
                 for i in range(len(mu)):
                     mu[i] = max_mu(X[i], y[i], mu[i], beta, tau)
-                for step in range(50):
+                for step in range(20):
                     l1 = 0
                     l2 = 0
                     for i in range(len(mu)):
@@ -271,9 +273,9 @@ def GH(k, X, y):
                     l2 -= np.diag(np.repeat(2 * lam, 10))
                     delta = l1 @ inv(l2)
                     new_beta = beta - delta.reshape(10, 1)
-                    if max(np.abs(delta)) < 10 ** (-3):
+                    if max(np.abs(delta)) < 10 ** (-6):
                         break;
-                    if max(np.abs(delta)) > 10 ** (2):
+                    if max(np.abs(delta)) > 10 ** (3):
                         break;
                     beta = new_beta
                     if True in np.isnan(beta):
@@ -281,19 +283,20 @@ def GH(k, X, y):
                     # print('Step ', step + 1, ':\n')
                     # print('Beta:\n', beta, '\n')
                     # print('Diff:\n', delta, '\n')
+                    # print('Lam:\n', lam, '\n')
                 if True in np.isnan(beta):
                     break;
             # print('Beta:\n', beta, '\n')
             # print("--- %s seconds ---" % (time.time() - start_time))
-            los = 0
+            score = 0
             for i in range(len(X)):
-                los += loss(X[i], y[i], beta, mu[i])
-            if los < pre_los:
+                score += l(X[i], y[i], mu[i], beta, tau) - sum(lam * (beta) **2)
+            if score > pre_score:
                 optimized_beta = beta
                 optimized_mu = mu
                 optimized_lam = lam
-                # reset pre_los
-                pre_los = los
+                # reset pre_score
+                pre_score = score
         except:
             continue;
     return [optimized_beta, optimized_mu]

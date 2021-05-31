@@ -27,7 +27,8 @@ for i in range(len(file_names)):
             out.append(globals()['out%s' % str(k+1)])
         # Simulations
         [beta, mu] = GH(k, data, out)
-        output(data, beta, truth).to_csv('../../Simulation_data_GLMM/Result_GH/Setting_3_' +
+        t = time.time() - start_time
+        output(data, beta, truth, t).to_csv('../../Simulation_data_GLMM/Result_GH/Setting_3_' +
                                               file_names[i][45:], header = True)
         print('======\n File:\n', file_names[i], '\n Completed!\n')
         print("--- %s seconds ---" % (time.time() - start_time))
