@@ -1,0 +1,1315 @@
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:12: RuntimeWarning: overflow encountered in exp
+  result = np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:12: RuntimeWarning: invalid value encountered in true_divide
+  result = np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:13: RuntimeWarning: overflow encountered in exp
+  if np.exp(x @ beta_0 + mu).max() == np.inf:
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: overflow encountered in exp
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: invalid value encountered in true_divide
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: overflow encountered in square
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: overflow encountered in exp
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:47: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: overflow encountered in exp
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: invalid value encountered in true_divide
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:51: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0), axis=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: overflow encountered in exp
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:58: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x[i] @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: invalid value encountered in true_divide
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: overflow encountered in exp
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:63: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: invalid value encountered in true_divide
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:64: RuntimeWarning: overflow encountered in exp
+  + np.nan_to_num((3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:65: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:64: RuntimeWarning: invalid value encountered in true_divide
+  + np.nan_to_num((3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: overflow encountered in exp
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: invalid value encountered in true_divide
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: overflow encountered in exp
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:72: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: invalid value encountered in true_divide
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:74: RuntimeWarning: overflow encountered in exp
+  (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:75: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:74: RuntimeWarning: invalid value encountered in true_divide
+  (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: overflow encountered in exp
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: invalid value encountered in true_divide
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: overflow encountered in exp
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: invalid value encountered in true_divide
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: overflow encountered in multiply
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:47: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: overflow encountered in square
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: overflow encountered in multiply
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:51: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0), axis=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: overflow encountered in multiply
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:58: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x[i] @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: overflow encountered in multiply
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:63: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:65: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: overflow encountered in power
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: overflow encountered in multiply
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:72: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:75: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: overflow encountered in power
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: overflow encountered in square
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:19: RuntimeWarning: divide by zero encountered in log
+  g = sum(y * np.log(Pi(x, beta_0, mu)) + (1 - y) * np.log(1 - Pi(x, beta_0, mu))) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:19: RuntimeWarning: invalid value encountered in multiply
+  g = sum(y * np.log(Pi(x, beta_0, mu)) + (1 - y) * np.log(1 - Pi(x, beta_0, mu))) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:20: RuntimeWarning: divide by zero encountered in log
+  + np.log((np.sqrt(2 * np.pi) * tau) ** (-1) * np.exp(-mu ** 2 / (2 * tau ** 2)))
+Step  1 :
+
+Step  2 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  1 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  29 :
+
+Step  30 :
+
+Step  31 :
+
+Step  32 :
+
+Step  33 :
+
+Step  34 :
+
+Step  35 :
+
+Step  36 :
+
+Step  37 :
+
+Step  38 :
+
+Step  39 :
+
+Step  40 :
+
+Step  41 :
+
+Step  42 :
+
+Step  43 :
+
+Step  44 :
+
+Step  45 :
+
+Step  46 :
+
+Step  47 :
+
+Step  48 :
+
+Step  49 :
+
+Step  50 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  29 :
+
+Step  30 :
+
+Step  31 :
+
+Step  32 :
+
+Step  33 :
+
+Step  34 :
+
+Step  35 :
+
+Step  36 :
+
+Step  37 :
+
+Step  38 :
+
+Step  39 :
+
+Step  40 :
+
+Step  41 :
+
+Step  42 :
+
+Step  43 :
+
+Step  44 :
+
+Step  45 :
+
+Step  46 :
+
+Step  47 :
+
+Step  48 :
+
+Step  49 :
+
+Step  50 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+The lambda is:  2
+--- 2151.3211607933044 seconds ---
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:12: RuntimeWarning: overflow encountered in exp
+  result = np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:12: RuntimeWarning: invalid value encountered in true_divide
+  result = np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:13: RuntimeWarning: overflow encountered in exp
+  if np.exp(x @ beta_0 + mu).max() == np.inf:
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: overflow encountered in exp
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: invalid value encountered in true_divide
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: overflow encountered in square
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: overflow encountered in exp
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:47: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: overflow encountered in exp
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: invalid value encountered in true_divide
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:51: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0), axis=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: overflow encountered in exp
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:58: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x[i] @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: invalid value encountered in true_divide
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: overflow encountered in exp
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:63: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: invalid value encountered in true_divide
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:64: RuntimeWarning: overflow encountered in exp
+  + np.nan_to_num((3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:65: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:64: RuntimeWarning: invalid value encountered in true_divide
+  + np.nan_to_num((3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: overflow encountered in exp
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: invalid value encountered in true_divide
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: overflow encountered in exp
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:72: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: invalid value encountered in true_divide
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:74: RuntimeWarning: overflow encountered in exp
+  (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:75: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:74: RuntimeWarning: invalid value encountered in true_divide
+  (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: overflow encountered in exp
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: invalid value encountered in true_divide
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: overflow encountered in exp
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: invalid value encountered in true_divide
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: overflow encountered in multiply
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:47: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: overflow encountered in square
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: overflow encountered in multiply
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:51: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0), axis=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: overflow encountered in multiply
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:58: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x[i] @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: overflow encountered in multiply
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:63: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:65: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: overflow encountered in power
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: overflow encountered in multiply
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:72: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:75: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: overflow encountered in power
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: overflow encountered in square
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:19: RuntimeWarning: divide by zero encountered in log
+  g = sum(y * np.log(Pi(x, beta_0, mu)) + (1 - y) * np.log(1 - Pi(x, beta_0, mu))) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:19: RuntimeWarning: invalid value encountered in multiply
+  g = sum(y * np.log(Pi(x, beta_0, mu)) + (1 - y) * np.log(1 - Pi(x, beta_0, mu))) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:20: RuntimeWarning: divide by zero encountered in log
+  + np.log((np.sqrt(2 * np.pi) * tau) ** (-1) * np.exp(-mu ** 2 / (2 * tau ** 2)))
+Step  1 :
+
+Step  2 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  1 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  29 :
+
+Step  30 :
+
+Step  31 :
+
+Step  32 :
+
+Step  33 :
+
+Step  34 :
+
+Step  35 :
+
+Step  36 :
+
+Step  37 :
+
+Step  38 :
+
+Step  39 :
+
+Step  40 :
+
+Step  41 :
+
+Step  42 :
+
+Step  43 :
+
+Step  44 :
+
+Step  45 :
+
+Step  46 :
+
+Step  47 :
+
+Step  48 :
+
+Step  49 :
+
+Step  50 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  29 :
+
+Step  30 :
+
+Step  31 :
+
+Step  32 :
+
+Step  33 :
+
+Step  34 :
+
+Step  35 :
+
+Step  36 :
+
+Step  37 :
+
+Step  38 :
+
+Step  39 :
+
+Step  40 :
+
+Step  41 :
+
+Step  42 :
+
+Step  43 :
+
+Step  44 :
+
+Step  45 :
+
+Step  46 :
+
+Step  47 :
+
+Step  48 :
+
+Step  49 :
+
+Step  50 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Traceback (most recent call last):
+  File "covid_LA.py", line 22, in <module>
+    [beta, mu, lam] = LA(data, out)
+ValueError: too many values to unpack (expected 3)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:12: RuntimeWarning: overflow encountered in exp
+  result = np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:12: RuntimeWarning: invalid value encountered in true_divide
+  result = np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu))))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:13: RuntimeWarning: overflow encountered in exp
+  if np.exp(x @ beta_0 + mu).max() == np.inf:
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: overflow encountered in exp
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: invalid value encountered in true_divide
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:30: RuntimeWarning: overflow encountered in square
+  result = np.nan_to_num(- np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: overflow encountered in exp
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:47: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: invalid value encountered in true_divide
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: overflow encountered in exp
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: invalid value encountered in true_divide
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: overflow encountered in exp
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:51: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0), axis=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: invalid value encountered in true_divide
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: overflow encountered in exp
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:58: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x[i] @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: invalid value encountered in true_divide
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: overflow encountered in exp
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:63: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: invalid value encountered in true_divide
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:64: RuntimeWarning: overflow encountered in exp
+  + np.nan_to_num((3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:65: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:64: RuntimeWarning: invalid value encountered in true_divide
+  + np.nan_to_num((3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: overflow encountered in exp
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: invalid value encountered in true_divide
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: overflow encountered in exp
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:72: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: invalid value encountered in true_divide
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:74: RuntimeWarning: overflow encountered in exp
+  (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:75: RuntimeWarning: overflow encountered in exp
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:74: RuntimeWarning: invalid value encountered in true_divide
+  (3 * np.exp(2 * (x @ beta_0 + mu)) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: overflow encountered in exp
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: invalid value encountered in true_divide
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: overflow encountered in exp
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: invalid value encountered in true_divide
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:46: RuntimeWarning: overflow encountered in multiply
+  return sum(- np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:47: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:34: RuntimeWarning: overflow encountered in square
+  result = np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) / (1 + np.exp(x @ beta_0 + mu)) ** 2)), nan=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:50: RuntimeWarning: overflow encountered in multiply
+  return np.sum(- x * np.nan_to_num(np.asarray((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:51: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3)), nan=0), axis=0)
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:57: RuntimeWarning: overflow encountered in multiply
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) * (np.exp(x[i] @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:58: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x[i] @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:62: RuntimeWarning: overflow encountered in multiply
+  result = sum(- np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:63: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:65: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:66: RuntimeWarning: overflow encountered in power
+  - np.nan_to_num((np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:71: RuntimeWarning: overflow encountered in multiply
+  result = np.sum(- x * np.asarray(np.nan_to_num((np.exp(x @ beta_0 + mu) * (np.exp(x @ beta_0 + mu) - 1) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:72: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:75: RuntimeWarning: overflow encountered in power
+  / (1 + np.exp(x @ beta_0 + mu)) ** 4), nan=0) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:77: RuntimeWarning: overflow encountered in power
+  (np.exp(2 * (x @ beta_0 + mu)) / (1 + np.exp(x @ beta_0 + mu)) ** 3), nan=0))
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:41: RuntimeWarning: overflow encountered in square
+  * np.nan_to_num((np.exp(x[i] @ beta_0 + mu) / (1 + np.exp(x[i] @ beta_0 + mu)) ** 2),
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:19: RuntimeWarning: divide by zero encountered in log
+  g = sum(y * np.log(Pi(x, beta_0, mu)) + (1 - y) * np.log(1 - Pi(x, beta_0, mu))) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:19: RuntimeWarning: invalid value encountered in multiply
+  g = sum(y * np.log(Pi(x, beta_0, mu)) + (1 - y) * np.log(1 - Pi(x, beta_0, mu))) \
+/Users/wli17/Documents/GLMM/GLMM/Covid_LA/GLMM_LA.py:20: RuntimeWarning: divide by zero encountered in log
+  + np.log((np.sqrt(2 * np.pi) * tau) ** (-1) * np.exp(-mu ** 2 / (2 * tau ** 2)))
+Step  1 :
+
+Step  2 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  1 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  29 :
+
+Step  30 :
+
+Step  31 :
+
+Step  32 :
+
+Step  33 :
+
+Step  34 :
+
+Step  35 :
+
+Step  36 :
+
+Step  37 :
+
+Step  38 :
+
+Step  39 :
+
+Step  40 :
+
+Step  41 :
+
+Step  42 :
+
+Step  43 :
+
+Step  44 :
+
+Step  45 :
+
+Step  46 :
+
+Step  47 :
+
+Step  48 :
+
+Step  49 :
+
+Step  50 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  9 :
+
+Step  10 :
+
+Step  11 :
+
+Step  12 :
+
+Step  13 :
+
+Step  14 :
+
+Step  15 :
+
+Step  16 :
+
+Step  17 :
+
+Step  18 :
+
+Step  19 :
+
+Step  20 :
+
+Step  21 :
+
+Step  22 :
+
+Step  23 :
+
+Step  24 :
+
+Step  25 :
+
+Step  26 :
+
+Step  27 :
+
+Step  28 :
+
+Step  29 :
+
+Step  30 :
+
+Step  31 :
+
+Step  32 :
+
+Step  33 :
+
+Step  34 :
+
+Step  35 :
+
+Step  36 :
+
+Step  37 :
+
+Step  38 :
+
+Step  39 :
+
+Step  40 :
+
+Step  41 :
+
+Step  42 :
+
+Step  43 :
+
+Step  44 :
+
+Step  45 :
+
+Step  46 :
+
+Step  47 :
+
+Step  48 :
+
+Step  49 :
+
+Step  50 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+Step  6 :
+
+Step  7 :
+
+Step  8 :
+
+Step  1 :
+
+Step  2 :
+
+Step  3 :
+
+Step  4 :
+
+Step  5 :
+
+--- 1636.9999480247498 seconds ---

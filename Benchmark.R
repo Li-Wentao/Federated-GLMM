@@ -39,6 +39,9 @@ dat2$Site_ID
 fit <- glmmML(y ~ X1 + X2 + X3 + X4 + X5 + X6 + X7 + X8 + X9 + X10 - 1, data = dat2, cluster = Site_ID, n.points=1)
 # summary(glmer(y ~ X1 + X2 + X3 + X4 + X5 + X6 + X7 + X8 + X9 + X10 + (1 | Site_ID) - 1, data = dat2, family = binomial, nAGQ = 1))
 
+#########################
+# Laplace approximation #
+#########################
 Truth <- c(-1.5,0.1,-0.5,-0.3,0.4,-0.2,-0.25,0.35,-0.1,0.5)
 # Setting 1
 file_names <- list.files('/Users/wli17/Documents/GLMM/Simulation_data_GLMM/Setting_1')
