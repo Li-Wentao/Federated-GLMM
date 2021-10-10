@@ -11,7 +11,7 @@ site <- rbind(y1*0+1, y2*0)
 names(site) <- 'site'
 dat <- cbind(y, X, site)
 # glmer with 5 aGH fit
-summary(glmer(outcome ~ V1 + V2 + V3 + V4 + V5 + V6 + V7 + V8 + V9 + V10 + (1 | site) - 1, data = dat, family = binomial, nAGQ = 10))
+summary(glmer(outcome ~ V1 + V2 + V3 + V4 + V5 + V6 + V7 + V8 + V9 + V10 + (1 | site) - 1, data = dat, family = binomial, nAGQ = 1))
 head(y)
 
 
