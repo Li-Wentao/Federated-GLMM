@@ -302,9 +302,9 @@ class LA:
         # Iteration
         pre_score = -10**10
         for self.lam in np.arange(0, lam_it+lam_step, lam_step):
-            print(f'In lambad = {self.lam}')
+            # print(f'In lambad = {self.lam}')
             for step_mu in range(mu_it):
-                print(f'The {step_mu+1} step of mu')
+                # print(f'The {step_mu+1} step of mu')
                 self.beta = self.beta.reshape(self.p, 1)
                 for i in range(self.n):
 #                     print('mu:\n', self.mu, '\n')
