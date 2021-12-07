@@ -307,7 +307,7 @@ class GH:
                     new_beta = self.beta - delta.reshape(self.p, 1)
                     if max(np.abs(delta)) < 10 ** (-3):
                         converge = True
-                        print(f'Step:{step}')
+                        # print(f'Step:{step}')
                         self.step += step+1
                         break;
                     if max(np.abs(delta)) > 10 ** (3):
