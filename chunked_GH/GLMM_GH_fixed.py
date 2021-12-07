@@ -288,9 +288,9 @@ class GH:
         # Added regularization
         pre_score = -10**10
         start_time = time.time()
-        for self.lam in np.arange(0, 5, 1):
+        for self.lam in np.arange(0, 2, 1):
             # print('Initial self.beta:', self.beta, "\n")
-            for step_mu in range(1):
+            for step_mu in range(2):
                 for i in range(len(self.mu)):                    
                     self.mu[i] = max_mu(self.X[i], self.y[i], self.mu[i], self.beta, self.tau)
                 for step in range(100):
@@ -305,25 +305,31 @@ class GH:
                     l2 -= np.diag(np.repeat(2 * self.lam, self.p))
                     delta = l1 @ inv(l2)
                     new_beta = self.beta - delta.reshape(self.p, 1)
-                    if max(np.abs(delta)) < 10 ** (-6):
+                    if max(np.abs(delta)) < 10 ** (-3):
+                        converge = True
+                        print(f'Step:{step}')
                         self.step += step+1
                         break;
                     if max(np.abs(delta)) > 10 ** (3):
+                        converge = False
                         break;
                     self.beta = new_beta
                     if True in np.isnan(self.beta):
+                        converge = False
                         break;
 #                     print('Step ', step + 1, ':\n')
 #     #                     print('Beta:\n', self.beta, '\n')
 #                     print('Diff:\n', delta, '\n')
 #                     print('Lam:\n', self.lam, '\n')
 #                     print('Score:\n',score,'\n')
+                if not converge:
+                    break;
 
             score = 0
             for i in range(len(self.X)):
                 score += l(self.k, self.X[i], self.y[i], self.mu[i], self.beta, self.tau) - sum(self.lam * (self.beta) **2)
 #             print('Score:\n',score,'\n')
-            if score > pre_score:
+            if (score > pre_score) and converge:
                 optimized_beta = self.beta
                 optimized_mu = self.mu
                 optimized_lam = self.lam

@@ -296,7 +296,6 @@ class LA:
         self.score = np.nan
         self.predict = np.nan
         self.time = np.nan
-        self.step = 0
         
     def fit(self, lam_it=0, lam_step=1, mu_it=2, theta_it=100):
         # Iteration
@@ -331,9 +330,9 @@ class LA:
 #                     print('diff of tau:\n',lt1/lt2,'\n')
                     lb1 -= (2 * self.lam * self.beta.transpose())[0]
                     lt1 -= 2 * self.lam * self.tau
-                    lb2 -= np.diag(np.repeat(2 * self.lam, self.p)) + 0.01
+                    lb2 -= np.diag(np.repeat(2 * self.lam, self.p)) + 0.00001
                     lt2 = np.diag(lt2 - 2 * self.lam)#np.diag(lt2)
-                    lt2 -= 0.01
+                    lt2 -= 0.00001
                     L1 = np.append(lb1, lt1)
 #                     L2 = block_diag(lb2, lt2)
                     L2 = np.block([
@@ -346,7 +345,6 @@ class LA:
                         self.beta = new_theta[:self.p]
                         self.tau = new_theta[self.p:]
                         converge = True
-                        self.step += step_theta+1
                         print('Done with iteration')
                         break;
                     if max(np.abs(delta)) > 10 **(2):
@@ -416,21 +414,19 @@ class LA:
                 optimized_mu = self.mu
                 optimized_lam = self.lam
                 optimized_tau = self.tau
-                optimized_step = self.step
                 # reset
                 pre_score = score
                 optimized_score = score
 #                 self.tau = np.repeat(1.0, self.n)
 
         # Returning data
-        optimized_beta[0] = optimized_beta[0] + np.mean(optimized_tau * optimized_mu)
+#         optimized_beta[0] = optimized_beta[0] + np.mean(optimized_tau * optimized_mu)
         self.beta = optimized_beta
         self.mu = optimized_mu
         self.lam = optimized_lam
         self.tau = optimized_tau
         self.score = optimized_score
         self.predict = np.concatenate(predict)
-        self.step = optimized_step
 
 
         X = np.concatenate(self.X)
